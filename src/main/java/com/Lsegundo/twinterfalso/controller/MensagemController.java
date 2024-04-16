@@ -44,7 +44,7 @@ public class MensagemController {
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping("/deletarMensagem{id}")
+    @DeleteMapping("/deletarMensagem/{id}")
     public ResponseEntity<Void> deletarMensagem(@PathVariable("id") Long idMensagem, JwtAuthenticationToken token){
 
         // consultando se a mensagem existe no banco
